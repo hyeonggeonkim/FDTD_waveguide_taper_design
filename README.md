@@ -1,5 +1,7 @@
 # Efficient Silicon-on-Insulator (SOI) Waveguide Tapers
-Adiabatic exponential and non-adiabatic sinusoidal tapers optimized for high transmission from 10 µm → 0.5 µm SOI waveguides at λ = 1.55 µm.
+## Abstract
+
+Designing efficient waveguide tapers is critical in silicon photonics. We introduce two taper designs—an **adiabatic exponential** taper and a **non-adiabatic sinusoidal** taper—aimed at achieving high transmission between a **10-µm-wide** input silicon waveguide and a **0.5-µm-wide** output silicon waveguide at **λ = 1.55 µm**. Taper parameters were optimized via parameter sweeps and global optimization using the **Lumerical Eigenmode Expansion (EME)** solver. The **sinusoidal** taper outperforms both linear and exponential designs, especially at shorter lengths, and achieves **>90% transmission** across the **1.5–1.6 µm** wavelength range.
 
 ---
 
