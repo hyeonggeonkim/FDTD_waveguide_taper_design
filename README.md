@@ -12,7 +12,6 @@ It provides formulas, example scripts, and instructions to reproduce simulations
 - **Linear (adiabatic)**
 - **Exponential (adiabatic)**
 - **Sinusoidal (non-adiabatic)**
-![initial](https://github.com/user-attachments/assets/3b4a2c55-e3e7-4ee1-a73b-ae139e64b8ec)
 We use **Eigenmode Expansion (EME)** to sweep design parameters and apply **Particle Swarm Optimization (PSO)** to maximize the **intensity transmission coefficient** between the input and output SOI waveguides.
 
 ---
