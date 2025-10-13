@@ -26,6 +26,32 @@ We use **Eigenmode Expansion (EME)** to sweep design parameters and apply **Part
 
 ---
 
+## Method Summary
+
+- **Platform**  
+  Silicon-on-Insulator (Si core, SiO₂ cladding). Input waveguide **10 µm** wide to output **0.5 µm** wide; thickness ~**220 nm**; telecom band centered near **1.55 µm**.
+
+- **Taper Families**
+  - **Linear (adiabatic):** Width varies linearly with propagation distance.
+  - **Exponential (adiabatic):** Width follows an exponential profile parameterized by **α**, smoothing mode evolution near the narrow end.
+  - **Sinusoidal (non-adiabatic):** Width is sinusoidally modulated by **period** and **amplitude** to enable compact, high-throughput transitions.
+
+- **Simulation & Metric**  
+  Lumerical **Eigenmode Expansion (EME)** with fundamental-mode excitation; transmission extracted from the S-matrix (power transmission).
+
+- **Parameter Studies & Optimization**
+  - **Sinusoidal:** Period sweep, amplitude sweep, and an optimization run (“optimization curve”).
+  - **Exponential:** **α**-parameter sweep.
+  - **Cross-family comparisons:** Transmission vs **taper length** (e.g., 1–50 µm) and vs **wavelength** (1.5–1.6 µm).
+
+- **Data Organization**  
+  Plain-text, two-column files `(x, Transmission)` in `results/`, plus `show_swwp_results.mat` consolidating parsed outputs.
+
+- **Key Takeaway**  
+  Adiabatic tapers (linear/exponential) generally improve with increased length, while the **sinusoidal** geometry achieves **high transmission at shorter lengths**, making it attractive when footprint is constrained.
+
+---
+
 ## Figures
 
 - **Taper geometries**  
