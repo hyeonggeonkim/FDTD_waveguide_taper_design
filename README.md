@@ -75,9 +75,5 @@ Requirements:
 
 ## License
 
-### Code (MIT)
-
 All source code in this repository is licensed under the MIT License.
-
-SPDX-License-Identifier: MIT
 
