@@ -26,24 +26,19 @@ We use **Eigenmode Expansion (EME)** to sweep design parameters and apply **Part
 
 ---
 
-
-> If your figure filenames do not have the `.png` extension, rename (or adjust the links below).
-
----
-
 ## Figures (from `figures/`)
 
-- **Figure 1 – Taper geometries**  
+- **Taper geometries**  
   Linear, exponential, and sinusoidal taper shapes (input 10 µm → output 0.5 µm, thickness 220 nm, nominal length 15 µm).
   
   ![Figure 1](figures/figure1_png.png)
 
-- **Figure 2 – Parameter sweeps & optimization**  
+- **Parameter sweeps & optimization**  
   Sinusoidal: period and amplitude sweeps + PSO optimization; Exponential: α sweep.
   
   ![Figure 2](figures/figure2_png.png)
 
-- **Figure 3 – Field profiles & comparisons**  
+- **Field profiles & comparisons**  
   Field intensity inside each taper; transmission vs **taper length** (1–50 µm) and vs **wavelength** (1.5–1.6 µm).
   
   ![Figure 3](figures/figure3_png.png)
