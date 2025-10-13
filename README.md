@@ -26,7 +26,7 @@ We use **Eigenmode Expansion (EME)** to sweep design parameters and apply **Part
 
 ---
 
-## Figures (from `figures/`)
+## Figures
 
 - **Taper geometries**  
   Linear, exponential, and sinusoidal taper shapes (input 10 µm → output 0.5 µm, thickness 220 nm, nominal length 15 µm).
@@ -45,7 +45,7 @@ We use **Eigenmode Expansion (EME)** to sweep design parameters and apply **Part
 
 ---
 
-## Data (from `results/`)
+## Data
 
 All raw numerical results exported from Lumerical EME are stored as plain-text, two-column files:
 
@@ -70,3 +70,14 @@ A consolidated MATLAB file, **`show_sweep_results.mat`**, aggregates/organizes t
 Requirements:
 - **MATLAB** (R2023b+ recommended)
 - The `results/` text files present as listed above
+
+---
+
+## License
+
+### Code (MIT)
+
+All source code in this repository is licensed under the MIT License.
+
+SPDX-License-Identifier: MIT
+
