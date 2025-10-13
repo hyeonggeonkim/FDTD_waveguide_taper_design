@@ -26,4 +26,52 @@ We use **Eigenmode Expansion (EME)** to sweep design parameters and apply **Part
 
 ---
 
-## Repository Structure
+
+> If your figure filenames do not have the `.png` extension, rename (or adjust the links below).
+
+---
+
+## Figures (from `figures/`)
+
+- **Figure 1 – Taper geometries**  
+  Linear, exponential, and sinusoidal taper shapes (input 10 µm → output 0.5 µm, thickness 220 nm, nominal length 15 µm).
+  
+  ![Figure 1](figures/figure1_png.png)
+
+- **Figure 2 – Parameter sweeps & optimization**  
+  Sinusoidal: period and amplitude sweeps + PSO optimization; Exponential: α sweep.
+  
+  ![Figure 2](figures/figure2_png.png)
+
+- **Figure 3 – Field profiles & comparisons**  
+  Field intensity inside each taper; transmission vs **taper length** (1–50 µm) and vs **wavelength** (1.5–1.6 µm).
+  
+  ![Figure 3](figures/figure3_png.png)
+
+---
+
+## Data (from `results/`)
+
+All raw numerical results exported from Lumerical EME are stored as plain-text, two-column files:
+
+- **Sinusoidal sweeps / optimization**
+  - `eme_taper_period_sweep_p1.txt` — number-of-periods sweep
+  - `eme_taper_amp_sweep_16.txt` — amplitude sweep (period fixed)
+  - `eme_taper_sinusoidal_optimization_curve.txt` — optimization history
+
+- **Exponential sweep**
+  - `eme_taper_exponential_n_exp_sweep.txt` — α-parameter sweep
+
+- **Best-result comparisons (three taper families)**
+  - `eme_taper_*_best_result_group_span2.txt` — transmission vs taper length
+  - `eme_taper_*_best_result_wavenelght_1.5to1.6_sweep.txt` — transmission vs wavelength
+
+A consolidated MATLAB file, **`show_sweep_results.mat`**, aggregates/organizes these text files for quick loading.
+
+---
+
+## Reproducing the plots
+
+Requirements:
+- **MATLAB** (R2023b+ recommended)
+- The `results/` text files present as listed above
